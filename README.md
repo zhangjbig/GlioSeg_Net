@@ -4,6 +4,9 @@ This manual introduces the training and inference process of the GlioSeg-Net.
 
 The code was developed on top of the excellent [nnU-Net library](https://github.com/MIC-DKFZ/nnUNet). This readme only provides a targeted introduction around our network. You can refer to the original files of nnU-Net for more detailed instructions on installation, usage, and common Q&A.
 
+You can view the network structure of GlioSeg-Net iin './nnunet/network_architecture/generic_UNet.py' and the corresponding trainer in './nnunet/training/network_training/nnUNetTrainerV2.py'
+
+For Windows systems, please correctly configure the path required for nnU-Net in './nnunet/paths.py'.
 
 # Installation
 GlioSeg-Net has been tested on Linux (Ubuntu 16, 18 and 20; centOS, RHEL) and windows(windows10, windows11). We do not provide support for other operating systems.
@@ -19,7 +22,7 @@ Python 2 is deprecated and not supported. Please make sure you are using Python 
 2. Install GlioSeg Net based on your system  (this will create a copy of the GlioSeg-Net code on your computer so that you can modify it as needed):
 
     ```bash
-    git clone https://github.com/MIC-DKFZ/nnUNet.git(待修改)
+    git clone https://github.com/zhangjbig/GlioSeg_Net
     cd nnUNet
     pip install -e .
     ```
